@@ -1,0 +1,227 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #f5efe6; /* beige background */
+  color: #3b2f2f; /* dark brown text */
+}
+
+/* Header */
+header {
+  background-color: #fff5e6;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #3b2f2f;
+  font-weight: 600;
+}
+
+.order-btn {
+  background-color: #a67c52;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 5%;
+  align-items: center;
+  background-color: #f0e6dc;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background-color: #a67c52;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* Sections */
+section {
+  padding: 4rem 5%;
+}
+
+.featured, .menu-highlights, .happy-hours, .reviews {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.featured-text, .menu-item, .happy-text, .review-card {
+  flex: 1 1 300px;
+}
+
+/* Menu Highlights */
+.menu-item {
+  background-color: #fff5e6;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #3b2f2f;
+  color: white;
+}
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.menu-item {
+  text-align: center;
+  background: #f5f0e6; /* soft beige background */
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.menu-item img {
+  width: 180px;   /* 👈 shrink image size */
+  height: 150px;  /* 👈 keeps them consistent */
+  object-fit: cover; /* crops nicely without stretching */
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.menu-item h3 {
+  margin: 8px 0 5px;
+  font-size: 1.1rem;
+  color: #4e342e; /* dark earthy brown */
+}
+
+.menu-item p {
+  font-size: 0.95rem;
+  color: #5d4037;
+}
+/* General rule for all images */
+img {
+  max-width: 200px;   /* shrink overall width */
+  height: auto;       /* keep proportions */
+  border-radius: 8px; /* keeps them neat */
+}
+
+/* Menu highlights images */
+.menu-highlights img {
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+
+/* Featured section image */
+.featured-image img {
+  max-width: 250px;
+}
+
+/* Hero section image */
+.hero-image img {
+  max-width: 300px;
+}
+
+/* Happy hours images */
+.happy-images img {
+  max-width: 180px;
+  margin: 5px;
+}
+
+/* Review images */
+.review-card img {
+  max-width: 100px;
+  border-radius: 50%;  /* makes them circular like profile pics */
+}
+.about-images {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.about-images img {
+  max-width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  line-height: 1.7;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.service-card {
+  background: #fdfaf6; /* soft beige */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  padding: 15px;
+  text-align: center;
+}
+
+.service-card img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.service-card h3 {
+  color: #4b2e2e; /* dark earthy brown */
+  margin-bottom: 8px;
+}
+
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  line-height: 1.6;
+}
+
